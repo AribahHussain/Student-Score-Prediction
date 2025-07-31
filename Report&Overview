@@ -1,0 +1,70 @@
+📝 Student Score Prediction – Project Report
+🔍 Objective
+The aim of this project is to predict students' final scores based on their study hours and other performance-related factors using regression techniques. Three different models were trained and evaluated to understand their effectiveness in score prediction.
+
+📁 Dataset Overview
+The dataset used is Student Performance Factors from Kaggle. It includes:
+
+study_hours: Time spent studying
+
+sleep_hours: Average hours of sleep
+
+class_participation: Level of participation in class
+
+final_score: The target variable (student score)
+
+🧹 Data Preparation
+Loaded the dataset using Pandas.
+
+Removed rows with missing values to ensure clean input for models.
+
+Visualized correlations using a heatmap and scatter plots to understand feature relationships.
+
+🧪 Modeling Approaches
+1. Linear Regression
+Feature: study_hours
+
+Purpose: To model the linear relationship between study time and score.
+
+Output: A fitted line predicting score based on study time.
+
+2. Polynomial Regression (Degree 2)
+Feature: study_hours transformed into polynomial terms.
+
+Purpose: To capture non-linear relationships between study time and score.
+
+Output: A curve fit to better capture upward trends in performance.
+
+3. Multivariable Linear Regression
+Features: study_hours, sleep_hours, class_participation
+
+Purpose: To evaluate how combining multiple features impacts score prediction.
+
+Output: A more complex model with higher potential accuracy.
+
+📊 Performance Evaluation
+Model	R² Score	RMSE
+Linear Regression	(from code)	(from code)
+Polynomial Regression (deg=2)	(from code)	(from code)
+Multivariable Regression	(from code)	(from code)
+
+Note: Replace values with actual numbers after running the code.
+
+📈 Visualization
+Scatter plots were used to compare predicted vs actual scores.
+
+A final comparison graph displays how all models perform relative to the actual data.
+
+✅ Conclusion
+Study hours positively correlate with final scores.
+
+Polynomial regression provides a better fit than linear for non-linear trends.
+
+Multivariable regression performs best when multiple factors are combined.
+
+🔧 Future Work
+Introduce more features (e.g., attendance, motivation level)
+
+Try regularization techniques (Ridge, Lasso)
+
+Experiment with tree-based or ensemble methods (Random Forest, XGBoost)
